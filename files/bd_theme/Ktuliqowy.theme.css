@@ -1,0 +1,47 @@
+/**
+    * @name Ktuliqowy
+    * @version 1.0.1
+    * @description Simple theme for Better Discord ~~with live updates.~~ (not yet) White theme not supported. Fuck white theme.
+    * @author Krulik2017
+**/
+
+/*----------------------------------------------------Ikony-------------------------------------------------------*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+
+
+/*---------------------------------------------------Content------------------------------------------------------*/
+@import url(Krulik2017.github.io/files/bd_theme/Ktuliqowy.theme.css);
+
+
+
+
+
+/*------------------------------------------------Ciemny motyw----------------------------------------------------*/
+.theme-dark {
+	--background-primary: rgb(0, 0, 0); /* Tlo czatu */
+	--background-secondary: rgb(16, 16, 16); /* Lista kanalow, foldery serwerow i lista czlonkow */
+	--channeltextarea-background: rgb(28, 28, 28); /* "Napisz na(...)" */
+	--background-tertiary: rgb(0, 0, 0); 	/* Ramka okna i tlo listy serwerow */
+	--background-secondary-alt: var(--channeltextarea-background); /* Okienko pod lista kanalow */
+	--background-modifier-selected: rgb(32, 32, 32); /* Wybrany element */
+    --background-floating: rgb(22, 22, 22); /* Plywające elementy np. karta informacji uzytkownika */
+    --background-modifier-accent: rgba(64, 64, 64, 0.3); /* Linie akcentowe rozdzielające coś */
+    --channels-default: rgb(86, 86, 86);
+    --brand-experiment: var(--muj); /* Domyslnie discordowy niebieski */
+    --brand-experiment-560: var(--muj-2); /* Mesage menu:hover (i pare innych miejsc) */
+    /* --interactive-normal: var(--muj-3); */ /* Ikony */
+
+	/* Moje zmienne */
+	--background-alpha: rgba(32, 32, 32, 0.8); 
+    --muj: rgb(95, 96, 140);
+    --muj-2: rgb(45, 48, 79);
+    --muj-3: rgb(245, 230, 223);
+
+	/* Scrollbar */
+	--scrollbar-thin-thumb: var(--channeltextarea-background);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--channeltextarea-background);
+    --scrollbar-auto-track: rgba(32, 32, 32, 0.3);
+    --scrollbar-auto-scrollbar-color-thumb: rgb(22, 27, 34);
+    --scrollbar-auto-scrollbar-color-track: rgba(17, 19, 24, 0.308);
+}

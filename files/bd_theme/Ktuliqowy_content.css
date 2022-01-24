@@ -1,0 +1,83 @@
+.theme-dark .container-2cd8Mz { /* Lista znajomych */
+	background-color: var(--background-primary);
+}
+
+.theme-dark .contentWrapper-3vHNP2 { /* Gify i inne */
+	background-color: var(--background-alpha);
+}
+
+.theme-dark .root-g14mjS, .theme-dark .footer-31IekZ { /* Popout message */
+	background-color: var(--channeltextarea-background);
+}
+.theme-dark .message-G6O-Wv { /* Popuot message/tlo czatu podgladu */
+	background-color: var(--background-primary);
+}
+
+.theme-dark .inner-2pOSmK {
+	background-color: var(--background-secondary);
+}
+
+.theme-dark pre .hljs { /* Codeblock */
+    background-color: var(--background-alpha) !important;
+    color: var(--channels-default) !important;
+}
+
+.emptyChannelIcon-1YdEz2 { /* Ikony czatu "#" */
+    background-color: var(--channels-default);
+}
+
+
+.theme-dark .channel-1Shao0.container-1oeRFJ.clickable-28SzVr .layout-1qmrhw:hover, /* Prywatne czaty:hover */
+.theme-dark .iconVisibility-vptxma.wrapper-NhbLHG .content-1gYQeQ:hover, /* Lista kanałów:hover */
+.item-3XjbnG.themed-2-lozF:hover { /* Ustawienia:hover */
+	background-color: var(--background-primary) !important;
+}
+.theme-dark .iconVisibility-vptxma.wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ:hover,
+.item-3XjbnG.selected-g-kMVV.themed-2-lozF:hover { /* Zabezpieczenie przed tym powyżej -_- (dla listy kanałów/ustawienia) */
+    background-color: var(--background-modifier-selected) !important;
+}
+.theme-dark .item-3mHhwr.item-3XjbnG.themed-2-lozF:hover { /* Kategorie znajomych:hover */
+	background-color: var(--background-secondary);
+}
+.theme-dark .item-3mHhwr.item-3XjbnG.selected-g-kMVV.themed-2-lozF:hover { /* Zabezpieczenie przed tym powyżej -_- */
+    background-color: var(--background-modifier-selected);
+}
+
+.theme-dark .colorStreamerMode-8uoRWd, .theme-dark .streamerModeEnabledBtn-2nlJTD { /* Tryb streamowania */
+    border-radius: 4px;
+    background-color: var(--muj-2);
+}
+
+
+
+
+/*--------------------------------------------------Obojetne------------------------------------------------------*/
+.lookFilled-yCfaCM.colorRed-rQXKgM, .colorDanger-3n-KnP.focused-3qFvc8 { /* Kolor guzika i innych martwych czerwonych */
+	background-color: rgb(152, 0, 0) !important;
+}
+
+
+
+
+
+/*--------------------------------------------Marginesy i bordery-------------------------------------------------*/
+.sidebar-1tnWFu { /* Lista znajomycj i ja */
+	border-radius: 8px !important;
+	margin-bottom: 12px;
+}
+.content-1jQy2l { /* Czat i lista czlonkow */
+	margin: 12px;
+	margin-left: 0px;
+}
+.container-2o3qEW, .membersWrap-3NUR2t.hiddenMembers-8kpYM0, .members-3WRCEx.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN, .content-2a4AW9 { /* Lista czlonkow */
+	border-radius: 8px;
+}
+.channelTextArea-1FufC0 { /* "Napisz na(...)" */
+	margin-bottom: 8px;
+}
+.base-3bcbY3 { /* Typing indicator */
+	margin-bottom: -14px !important;
+}
+.divider-2rZFJK { /* Linia pojawiająca się podczas załączania plików */
+    left: 10px;  /* Naprawione mniej więcej (chujowo ale działa) */
+}
