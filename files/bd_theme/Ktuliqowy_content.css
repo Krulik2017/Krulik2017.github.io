@@ -48,12 +48,29 @@
     background-color: var(--muj-2);
 }
 
+.theme-dark .autocomplete-3NRXG8 { /* Autocomlpete (pingowanie kogoś) */
+    background-color: var(--background-floating);
+}
+.theme-dark .selected-3H3-RC{ /* Autocomlpete:hover (pingowanie kogoś) */
+    background-color: var(--background-primary);
+}
+
+.theme-dark .wrapper-22rqw6, .theme-dark .categoryItemRecentEmoji-Rk8CU1, .theme-dark .stickerCategoryGeneric-29JiZ2 { /* Emoji, lista serwerów */
+    background-color: var(--background-alpha);
+}
+
 
 
 
 /*--------------------------------------------------Obojetne------------------------------------------------------*/
 .lookFilled-yCfaCM.colorRed-rQXKgM, .colorDanger-3n-KnP.focused-3qFvc8 { /* Kolor guzika i innych martwych czerwonych */
 	background-color: rgb(152, 0, 0) !important;
+}
+
+.info-1sUqUG::after {
+    content: "Nigger";
+    font-size: 12px;
+    color: var(--text-muted);
 }
 
 
