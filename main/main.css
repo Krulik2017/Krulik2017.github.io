@@ -113,17 +113,32 @@ a {
 
 /* mobile */
 @media only screen and (max-width: 767px) {
+        /* Header */
     header {
-    
-    }
-    nav {
-        position: fixed;
-        top: 320px;
-        left: 0;
+        border-bottom: solid 2px var(--border);
+        padding: calc((var(--header-height) - 38px) / 2);
         
-        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #home {
+        font-size: 28px !important;
+        margin-left: 0px !important;
+    }
+    header a {
+        font-size: 22px;
+        margin-right: auto;
+        margin-left: auto;
     }
     
+    
+    /* Main */
     main, iframe {
         border: none;
         height: 100%;
@@ -131,9 +146,38 @@ a {
     }
     
     
+    /* Nav */
+    nav {
+        padding-left: 8px;
+        padding-right: 8px;
+        border-right: solid 2px var(--border);
+        width: 300px;
+        height: 100%;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+     
+     
+        position: fixed;
+        top: 320px;
+        left: -300px;
+        
+        background-color: var(--backgroud);   
+    }
+    nav.show {
+        left: 0;
+    }
+    nav a {
+        margin-left: auto;
+        margin-right: auto;
+    }
     
-        header::before {
-        content: "website under construction";
-        color: rgb(162, 0, 0);
+    
+    
+    header::before {
+    content: "website under construction";
+    color: rgb(162, 0, 0);
     }
 } 

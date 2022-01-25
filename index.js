@@ -11,7 +11,7 @@ function main() {
     setTimeout(function() { x.innerHTML += "e" }, 500);
     setTimeout(function() { x.innerHTML += "l" }, 600);
     setTimeout(function() { x.innerHTML += "l" }, 700);
-    setTimeout(function() { x.innerHTML += 'o<span id="hello_dot">' }, 800);
+    setTimeout(function() { x.innerHTML += 'o' }, 800);
 
     setTimeout(function() {
         setInterval(dot, 500);
