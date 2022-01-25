@@ -1,22 +1,10 @@
+//Z czytywanie danych z poprzedniego okna
 function main() {
     var selected_item = localStorage.getItem("selected_item");
-    if(selected_item == "bd_theme") {
-        projects();
-        bd_theme();
-    }
-    if(selected_item == "test_project") {
-        projects();
-        test_project();
-    }
+    projects();
+    marker_nav(selected_item);
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -30,11 +18,11 @@ function projects() {
     
      document.getElementById("projects").classList.add("selected");
     document.getElementById("nav_list").innerHTML = `
-    <a class="button" id="bd_theme" onclick="bd_theme()">
+    <a class="button" id="bd_theme" onclick="marker_nav('bd_theme')">
         <div>BD theme</div>
         <div class="marker"></div>
     </a>
-    <a class="button" id="test_project" onclick="test_project()">
+    <a class="button" id="test_project" onclick="marker_nav('test_project')">
         <div>test project, long boi</div>
         <div class="marker"></div>
     </a>
@@ -62,28 +50,15 @@ function other() {
 
 
 
-
-
 // Nav
 var selected_nav = "none";
-function bd_theme() {
+function marker_nav(selected) {
     if(selected_nav != "none") {
         document.getElementById(selected_nav).classList.remove("selected");
     }
-    selected_nav = "bd_theme";
+    selected_nav = selected;
 
-    document.getElementById("bd_theme").classList.add("selected");
+    document.getElementById(selected).classList.add("selected");
     document.getElementById("iframe").removeAttribute("src");
-    document.getElementById("iframe").setAttribute("src","../Projects/Ktuliqowy_bd_theme.html");
-}
-
-function test_project() {
-    if(selected_nav != "none") {
-        document.getElementById(selected_nav).classList.remove("selected");
-    }
-    selected_nav = "test_project";
-
-    document.getElementById("test_project").classList.add("selected");
-    document.getElementById("iframe").removeAttribute("src");
-    document.getElementById("iframe").setAttribute("src","../Projects/test.html");
-}
+    document.getElementById("iframe").setAttribute("src","../Projects/"+selected+".html");
+} 
