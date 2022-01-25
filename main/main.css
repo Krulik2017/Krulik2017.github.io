@@ -113,5 +113,27 @@ a {
 
 /* mobile */
 @media only screen and (max-width: 767px) {
+    header {
     
+    }
+    nav {
+        position: fixed;
+        top: 320px;
+        left: 0;
+        
+        background-color: black;
+    }
+    
+    main, iframe {
+        border: none;
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    
+        header::before {
+        content: "website under construction";
+        color: rgb(162, 0, 0);
+    }
 } 

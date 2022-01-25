@@ -1,8 +1,12 @@
-//Z czytywanie danych z poprzedniego okna
+//Sczytywanie danych z poprzedniego okna
 function main() {
-    var selected_item = localStorage.getItem("selected_item");
-    projects();
-    marker_nav(selected_item);
+    if(sessionStorage.length != 0) {
+        var selected_item = sessionStorage.getItem("selected_item");
+        projects();
+        marker_nav(selected_item);
+    } else {
+        location.href = "../index.html"
+    }
 
 }
 

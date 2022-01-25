@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Krulik2017</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-    <div style="color: rgb(116, 0, 0); font-size: 28px;" >website under construction</div>
-    <a href="main/main.html" onclick="marker_nav('bd_theme')">
-        bd_theme
-    </a>
-    <br>
-    <a href="main/main.html" onclick="marker_nav('test_project')">
-        test_project
-        
-    </a>
-
+<body onload="main()">
+    <header>
+        <h1 id="hello"></h1>
+    </header>
+    <main>
+        <div>
+            <h2>Projects</h2>
+            <div>
+            <a class="button" href="main/main.html" onclick="marker_nav('bd_theme')">
+                <div>bd_theme</div>
+                <div class="marker"></div>
+            </a>
+            <br>
+            <a class="button" href="main/main.html" onclick="marker_nav('test_project')">
+                <div>test_project</div>
+                <div class="marker"></div>
+            </a>
+            </div>
+        </div>
+        <div>
+            <h2>Other</h2>
+            <div></div>
+        </div>
+    </main>
+    
+    
     <script src="index.js"></script>
 </body>
