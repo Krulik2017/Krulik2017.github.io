@@ -157,7 +157,8 @@ a {
         padding-right: 8px;
         border-right: solid 2px var(--border);
         height: calc(100% - var(--header-height-mob));
-        
+        background-color: var(--backgroud);   
+    
         
         display: flex;
         flex-direction: column;
@@ -166,13 +167,14 @@ a {
      
         position: absolute;
         left: -134px;
-        
-        background-color: var(--backgroud);   
-        
         transition: left 0.5s;
+        z-index: 3;
     }
     nav:hover {
         left: 0
+    }
+    nav:hover + iframe {
+        opacity: 0.3;
     }
     nav a {
         margin-left: auto;
@@ -184,6 +186,7 @@ a {
         margin-left: 28px;
         width: calc(100% - 28px);
         border: none;
+        transition: opacity 0.5s;
     }
     
     

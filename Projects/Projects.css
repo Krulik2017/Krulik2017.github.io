@@ -1,0 +1,55 @@
+:root {
+    background: black;
+    color: white;
+}
+
+/* Podstawowe */
+body {
+    margin: 16px;
+} 
+h1, h2{
+    text-align: center;
+}
+div {
+    
+}
+a {
+    color: white;
+    cursor: pointer;
+}
+
+/* Download */
+.download {
+    font-weight: bold;
+    width: min-content;
+    border: solid 1px rgb(128, 128, 128);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px;
+}
+.download a {
+    text-decoration: none;
+}
+
+/* Tabela */
+table, th, td{
+    border-collapse: collapse;
+    border: solid 1px rgb(128, 128, 128);
+    text-align: center;
+    padding: 4px;
+}
+td:nth-child(even) {
+    text-align: start;
+}
+table {
+    width: 100%;
+}
+tr:nth-child(even) {
+background-color: rgb(32, 32, 32);
+}
+
+/* Lista */
+ul, ol{
+    margin: 0px;
+    padding-left: 30px;
+}
