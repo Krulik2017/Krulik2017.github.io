@@ -22,8 +22,37 @@
     color: var(--channels-default) !important;
 }
 
-.emptyChannelIcon-1YdEz2 { /* Ikony czatu "#" */
+.theme-dark .emptyChannelIcon-1YdEz2 { /* Ikony czatu "#" */
     background-color: var(--channels-default);
+}
+.theme-dark .container-2McqkF { /* Szukaj popuot */ /* CHUJ WIE JAK NAPRAWIĆ TO GÓWNO  */
+    background-color: var(--background-floating);
+}
+.theme-dark .option-2KkUJO:hover { /* Szukaj popuot opcje:hover */
+    background-color: var(--background-primary);
+}
+.theme-dark .bd-search-wrapper, .theme-dark .searchBar-zdmu7v { /* Szukaj */
+    background-color: var(--background-secondary);
+}
+.theme-dark .lookFilled-yCfaCM.colorPrimary-2AuQVo { /* "Pomachaj, aby się przywitać" */
+    background-color: var(--background-modifier-selected);
+}
+.theme-dark .lookFilled-yCfaCM.colorPrimary-2AuQVo:hover { /* "Pomachaj, aby się przywitać":hover */
+    background-color: var(--background-primary);
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Stream */ /* chuj, popraw jak będzie można i zaaktualizuj główny */ /*-----------------------------------------------------------------------------------------------------------*/
+.theme-dark .tile-2TcwiO, .theme-dark .videoWrapper-3rtb_V { /* Tło */
+    background-color: var(--background-secondary);
+}
+.cta-3-AFNF { /* Przycisk */
+    background-color: var(--background-primary);
 }
 
 
