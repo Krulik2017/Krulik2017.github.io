@@ -20,10 +20,14 @@ function projects() {
     }
     selected_header = "projects";
     
-     document.getElementById("projects").classList.add("selected");
+    document.getElementById("projects").classList.add("selected");
     document.getElementById("nav_list").innerHTML = `
     <a class="button" id="bd_theme" onclick="marker_nav('bd_theme')">
         <div>BD theme</div>
+        <div class="marker"></div>
+    </a>
+    <a class="button" id="minecraft_portal" onclick="marker_nav('minecraft_portal')">
+        <div>Minecraft Portal</div>
         <div class="marker"></div>
     </a>
     <a class="button" id="test_project" onclick="marker_nav('test_project')">
@@ -64,5 +68,5 @@ function marker_nav(selected) {
 
     document.getElementById(selected).classList.add("selected");
     document.getElementById("iframe").removeAttribute("src");
-    document.getElementById("iframe").setAttribute("src","../Projects/"+selected+".html");
+    document.getElementById("iframe").setAttribute("src","../Projects/"+selected+"/"+selected+".html");
 } 

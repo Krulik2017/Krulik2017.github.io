@@ -1,0 +1,17 @@
+.bt {
+    background-image: var(--grass_block_top);
+    background-size: contain;
+}
+
+#bt1 {
+    transform: 
+        rotateX(80deg)
+        rotateZ(45deg)
+        translate3d(175px, -75px, -100px);
+}
+#bt2 {
+    transform: 
+        rotateX(80deg)
+        rotateZ(45deg)
+        translate3d(175px, -175px, -50px);
+}

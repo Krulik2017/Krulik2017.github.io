@@ -1,0 +1,36 @@
+.bl {
+    background-image: var(--grass_block_side);
+    background-size: contain;
+}
+
+#bl1 {
+    transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(125px, 75px, -150px);
+}
+#bl2 {
+    transform: 
+    rotateX(-10deg)
+    rotateY(-45deg)
+    translate3d(175px, 75px, -100px);
+}
+#bl3 {
+    transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(175px, 125px, -50px);
+}
+#bl4 {
+    transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(-175px, 125px, 0px);
+}
+
+#bl0 {
+    transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(0px, 175px, 200px);
+}
