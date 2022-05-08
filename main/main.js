@@ -30,6 +30,10 @@ function projects() {
         <div>Minecraft Portal</div>
         <div class="marker"></div>
     </a>
+    <a class="button" id="minecraft_portal_v2" onclick="marker_nav('minecraft_portal_v2')">
+        <div>Minecraft Portal V2</div>
+        <div class="marker"></div>
+    </a>
     <a class="button" id="test_project" onclick="marker_nav('test_project')">
         <div>test project, long boi</div>
         <div class="marker"></div>

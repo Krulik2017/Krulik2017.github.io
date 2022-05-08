@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Minecraft</title>
+        <link rel="stylesheet" href="trawa.css">
+        <link rel="stylesheet" href="nether_portal.css">
+        <link rel="stylesheet" href="animacja_portal.css">
+        <link rel="stylesheet" href="kamera.css">
+        <link rel="stylesheet" href="cienie.css">
+        <link rel="stylesheet" href="animacje.css">
+        <link rel="stylesheet" href="animacja_cienie_t.css">
+        <link rel="stylesheet" href="animacja_cienie_l.css">
+        <link rel="stylesheet" href="cienie2.css">
+        <link rel="stylesheet" href="cienie1_2.css">
+
+
+
+        <style>
+            :root {
+                /* --grass_block_top: url('https://lh3.googleusercontent.com/240HmHlOpxlIV67P1eI5RKUo5Qvvvjudt8pZmvIfzGwhVnVWWYFw2S4axQr6oIzboHS-P68Frl3uJ43LohNGUKXOSI5RzIWaJKequfg=h600');
+                --grass_block_side: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3b/Grass_Block_%28side_texture%29_JE2_BE2.png/revision/latest/scale-to-width-down/160?cb=20200921204925'); */
+                /* --obsidian: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5a/Obsidian_%28texture%29_JE3_BE2.png/revision/latest/scale-to-width-down/160?cb=20201001140204'); */
+                /* --portal: url('https://c.tenor.com/dl9I8ZsL7tsAAAAC/nether-portal.gif'); */
+                --grass_block_top: url('grass_block_top.jpg');
+                --grass_block_side: url('grass_block_side.webp');
+                --obsidian: url('obsidian.webp');
+                --portal: url('portal.gif');
+
+                --kam-x: 50%;
+                --kam-y: 50%;
+            }
+            body {
+                height: 100vh;
+                margin: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #scena {
+                height: 90vh;
+                width: 90vw;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                /* border: solid 1px black; */
+                margin: 0px;
+
+                perspective: 1000px;
+                transform-style: preserve-3d;
+
+                /* Bracanie kamery */
+                transition: perspective-origin 0.5s;
+                perspective-origin: var(--kam-x) var(--kam-y);
+            }
+
+            .obj { /* Objekt */
+                position: absolute;
+                background-color: grey;
+            }
+
+            
+
+            #podloga {
+                width: 401px;
+                height: 401px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-image: var(--grass_block_top);
+                background-size: 50px;
+
+                transform: 
+                    rotateX(80deg)
+                    rotateZ(45deg)
+                    translate3d(0px, 0px, -150px)
+                ;
+
+                overflow: hidden;
+            }
+
+            .kostka {
+                width: 51px;
+                height: 51px;
+            }
+            .kostkadol {
+                width: 401px;
+                height: 51px;
+            }   
+
+
+            input {
+                z-index: 100;
+            }
+            #shadows_debug {
+                position: fixed;
+                left: 5px;
+                top: 5px;
+            }
+            #shadows_debug::after {
+                margin-left: 15px;
+                content: "Shadows debug";
+            }
+            #shadows_debug:checked ~ * > .cien {
+                background-color: grey;
+            }
+        </style>
+
+    </head>
+    <body id="body">
+        <input type="checkbox" id="shadows_debug" title="Debug shadows">
+
+
+        <div class="camel" id="kam1"></div>
+        <div class="camel" id="kam2"></div>
+        <div class="camel" id="kam3"></div>
+        <div class="camel" id="kam4"></div>
+        <div class="camel" id="kam5"></div>
+
+        <div class="camel" id="kam6"></div>
+        <div class="camel" id="kam7"></div>
+        <div class="camel" id="kam8"></div>
+        <div class="camel" id="kam9"></div>
+        <div class="camel" id="kam10"></div>
+
+        <div class="camel" id="kam11"></div>
+        <div class="camel" id="kam12"></div>
+        <div class="camel" id="kam13"></div>
+        <div class="camel" id="kam14"></div>
+        <div class="camel" id="kam15"></div>
+
+        <div class="camel" id="kam16"></div>
+        <div class="camel" id="kam17"></div>
+        <div class="camel" id="kam18"></div>
+        <div class="camel" id="kam19"></div>
+        <div class="camel" id="kam20"></div>
+
+        <div class="camel" id="kam21"></div>
+        <div class="camel" id="kam22"></div>
+        <div class="camel" id="kam23"></div>
+        <div class="camel" id="kam24"></div>
+        <div class="camel" id="kam25"></div>
+
+        <div id="scena">
+            <!--    Podłoga      -->
+            <div class="obj" id="podloga">
+                <div id="cien_trawy_podloga"></div>
+
+                <!-- Dynamiczne cienie podloga --> <!-- bul bul -->
+                <div class="cien cb ct1-1"></div>
+                <div class="cien cb ct1-2"></div>
+                <div class="cien cb ct1-3"></div>
+                <div class="cien cb ct1-4"></div>
+                <div class="cien cb ct1-5"></div>
+                <div class="cien cb ct1-6"></div>
+                <div class="cien cb ct1-7"></div>
+                <div class="cien cb ct1-8"></div>
+                <div class="cien cb ct1-9"></div>
+                <div class="cien cb ct1-10"></div>
+                <div class="cien cb ct1-11"></div>
+                <div class="cien cb ct1-12"></div>
+                <div class="cien cb ct1-13"></div>
+                <div class="cien cb ct1-14"></div>
+
+            </div>
+
+            <!--    Prawa strona bloków trawy      -->
+            <div class="obj kostka br" id="br1">
+                <div class="obj kostka br" style="top: -50px;"></div>
+                <div class="obj kostka br" style="left: -50px;"></div>
+                <div class="obj kostka br" style="left: -100px;"></div>
+                <div class="obj kostka br" style="top: -50px; left: -50px;"></div>
+            </div>
+            <div class="obj kostka br" id="br6"></div>
+            <div class="obj kostka br" id="br7">
+                <div class="obj kostka bl" style="left: 100px; top: -50px;"></div>
+            </div>
+            <div class="obj kostka br" id="br8">
+                <div class="obj kostka bl" style="left: 100px; top: -50px;"></div>
+            </div>
+
+            <div class="obj kostkadol br" id="br0">
+
+            </div>
+
+            <!--    Lewa strona bloków trawy      -->
+            <div class="obj kostka bl" id="bl1">
+                <div class="obj kostka bl" style="top: 50px; left: -50px;"></div>
+                <div class="obj kostka bl" style="top: 50px; left: -100px;"></div>
+                <div class="obj kostka bl" style="top: 50px; left: -150px; overflow:hidden;">
+                    <div class="kostka cien_trawy"></div>
+                </div>
+                <div class="obj kostka bl" style="left: -250px; overflow:hidden;">
+                    <div class="kostka cien_trawy"></div>
+                </div>
+            </div>
+            <div class="obj kostka bl" id="bl2">
+                <div class="obj kostka bl" style="left: -50px; top: 50px;"></div>
+                <div class="obj kostka bl" style="left: -250px; top: 50px; overflow:hidden;">
+                    <div class="kostka cien_trawy"></div>
+                </div>
+                <div class="obj kostka bl" style="left: -350px;"></div>
+            </div>
+            <div class="obj kostka bl" id="bl3">
+                <div class="obj kostka bl" style="left: -300px; overflow:hidden;">
+                    <div class="kostka cien_trawy"></div>
+                </div>
+            </div>
+            <div class="obj kostka bl" id="bl4"></div>
+
+            <div class="obj kostkadol bl" id="bl0">
+                
+            </div>
+            <!-- Cienie lewa strona -->
+            <div class="cien cl1 cl1-1">
+                <div class="cl cl1-01"></div>
+                <div class="cl cl1-02"></div>
+            </div>
+            <div class="cien cl1 cl1-2">
+                <div class="cl cl1-01"></div>
+                <div class="cl cl1-02"></div>
+            </div>
+            <div class="cien cl1 cl1-5">
+                <div class="cl cl1-01"></div>
+                <div class="cl cl1-02"></div>
+            </div>
+            <div class="cien cl1 cl1-7">
+                <div class="cl cl1-01"></div>
+                <div class="cl cl1-02"></div>
+            </div>
+            <div class="cien cl1 cl1-9">
+                <div class="cl cl1-01"></div>
+                <div class="cl cl1-02"></div>
+            </div>
+            <div class="cien cl1 cl1-11">
+                <div class="cl cl1-01"></div>
+                <div class="cl cl1-02"></div>
+            </div>
+            <div class="cien cl1 cl1-12">
+                <div class="cl cl1-01"></div>
+                <div class="cl cl1-02"></div>
+            </div>
+            <!-- 2 warstwa lewa-->
+            <div class="cien cl2 cl1-2">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-3">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-4">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-6">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-8">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-10">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-12">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-13">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <div class="cien cl2 cl1-14">
+                <div class="cl cl2-01"></div>
+                <div class="cl cl2-02"></div>
+            </div>
+            <!-- 3 warstwa lewa-->
+            <div class="cien cl3 cl1-4">
+                <div class="cl cl3-01"></div>
+            </div>
+            <div class="cien cl3 cl1-6">
+                <div class="cl cl3-01"></div>
+            </div>
+            <div class="cien cl3 cl1-8">
+                <div class="cl cl3-01"></div>
+            </div>
+            <div class="cien cl3 cl1-10">
+                <div class="cl cl3-01"></div>
+            </div>
+            <div class="cien cl3 cl1-14">
+                <div class="cl cl3-01"></div>
+            </div>
+
+            <!--    Góra bloków trawy      -->
+            <div class="obj kostka bt" id="bt1">
+                <div class="obj kostka bt" style="top: -50px; left: -50px;">
+                </div>
+                <div class="obj kostka bt" style="top: -100px; left: -100px;"></div>
+                <div class="obj kostka bt" style="top: -100px; left: -150px;"></div>
+                <div class="obj kostka bt" style="top: -100px; left: -200px;"></div>
+                <div class="obj kostka bt" style="top: -50px; left: -250px;"></div>
+                <div class="obj kostka bt" style="top: -100px; left: -250px;"></div>
+                <div class="obj kostka bt" style="top: -50px; left: -300px;">
+                    <div class="kostka" id="cien_trawy_pod_2"></div>
+                </div>
+                <div class="obj kostka bt" style="left: -300px;"></div>
+                <div class="obj kostka bt" style="left: -350px;"></div>
+                <div class="obj kostka bt" style="top: 50px; left: -350px;"></div>
+            </div>
+            <div class="obj kostka bt" id="bt2">
+                <div class="obj kostka bt" style="top: 50px;"></div>
+                <div class="obj kostka bt" style="left: -50px;"></div>
+
+                <div class="obj kostka bt" style="left: -300px;"></div>
+                <div class="obj kostka bt" style="left: -350px;"></div>
+                <div class="obj kostka bt" style="top: 50px; left: -350px;"></div>
+            </div>
+
+            <!-- cienie top -->
+            <div class="cien ct2 ct1-1">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-2">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-3">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-4">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-5">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-6">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-7">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-8">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-9">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-10">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-11">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-12">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-13">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <div class="cien ct2 ct1-14">
+                <div class="ct ct2-01"></div>
+                <div class="ct ct2-02"></div>
+                <div class="ct ct2-03"></div>
+            </div>
+            <!-- drugie pienrto cieni-->
+            <div class="cien ct3 ct1-1">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-2">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-3">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-4">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-5">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-6">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-7">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-8">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-9">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-10">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-11">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-12">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-13">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+            <div class="cien ct3 ct1-14">
+                <div class="ct ct3-01"></div>
+                <div class="ct ct3-02"></div>
+                <div class="ct ct3-03"></div>
+            </div>
+
+            <!--    Portal obsidian      -->
+            <div class="obj kostka obs pt" id="p1t"></div>
+            <div class="obj kostka obs pl" id="p1l"></div>
+            <div class="obj kostka obs pr" id="p1r"></div>
+            <div class="obj kostka obs pb" id="p1b"></div>
+
+            <div class="obj kostka obs pt" id="p2t"></div>
+            <div class="obj kostka obs pl" id="p2l"></div>
+            <div class="obj kostka obs pr" id="p2r"></div>
+            <div class="obj kostka obs pb" id="p2b"></div>
+
+            <div class="obj kostka obs pt" id="p3t"></div>
+            <div class="obj kostka obs pl" id="p3l"></div>
+            <div class="obj kostka obs pr" id="p3r"></div>
+            <div class="obj kostka obs pb" id="p3b"></div>
+
+            <div class="obj kostka obs pt" id="p4t"></div>
+            <div class="obj kostka obs pl" id="p4l"></div>
+            <div class="obj kostka obs pr" id="p4r"></div>
+            <div class="obj kostka obs pb" id="p4b"></div>
+
+            <div class="obj kostka obs pt" id="p5t"></div>
+            <div class="obj kostka obs pl" id="p5l"></div>
+            <div class="obj kostka obs pr" id="p5r"></div>
+            <div class="obj kostka obs pb" id="p5b"></div>
+
+            <div class="obj kostka obs pt" id="p6t"></div>
+            <div class="obj kostka obs pl" id="p6l"></div>
+            <div class="obj kostka obs pr" id="p6r"></div>
+            <div class="obj kostka obs pb" id="p6b"></div>
+
+            <div class="obj kostka obs pt" id="p7t"></div>
+            <div class="obj kostka obs pl" id="p7l"></div>
+            <div class="obj kostka obs pr" id="p7r"></div>
+            <div class="obj kostka obs pb" id="p7b"></div>
+
+            <div class="obj kostka obs pt" id="p8t"></div>
+            <div class="obj kostka obs pl" id="p8l"></div>
+            <div class="obj kostka obs pr" id="p8r"></div>
+            <div class="obj kostka obs pb" id="p8b"></div>
+
+            <div class="obj kostka obs pt" id="p9t"></div>
+            <div class="obj kostka obs pl" id="p9l"></div>
+            <div class="obj kostka obs pr" id="p9r"></div>
+            <div class="obj kostka obs pb" id="p9b"></div>
+
+            <div class="obj kostka obs pt" id="p10t"></div>
+            <div class="obj kostka obs pl" id="p10l"></div>
+            <div class="obj kostka obs pr" id="p10r"></div>
+            <div class="obj kostka obs pb" id="p10b"></div>
+
+            <div class="obj kostka obs pt" id="p11t"></div>
+            <div class="obj kostka obs pl" id="p11l"></div>
+            <div class="obj kostka obs pr" id="p11r"></div>
+            <div class="obj kostka obs pb" id="p11b"></div>
+            
+            <div class="obj kostka obs pt" id="p12t"></div>
+            <div class="obj kostka obs pl" id="p12l"></div>
+            <div class="obj kostka obs pr" id="p12r"></div>
+            <div class="obj kostka obs pb" id="p12b"></div>
+
+            <div class="obj kostka obs pt" id="p13t"></div>
+            <div class="obj kostka obs pl" id="p13l"></div>
+            <div class="obj kostka obs pr" id="p13r"></div>
+            <div class="obj kostka obs pb" id="p13b"></div>
+
+            <div class="obj kostka obs pt" id="p14t"></div>
+            <div class="obj kostka obs pl" id="p14l"></div>
+            <div class="obj kostka obs pr" id="p14r"></div>
+            <div class="obj kostka obs pb" id="p14b"></div>
+
+            <!--    Portal portal frame      -->
+            <div class="obj kostka por" id="pf">
+                <div class="obj kostka por" style="left: 50px;"></div>
+                <div class="obj kostka por"style="top: -50px"></div>
+                <div class="obj kostka por"style="top: -50px; left: 50px;"></div>
+                <div class="obj kostka por"style="top: -100px"></div>
+                <div class="obj kostka por"style="top: -100px; left: 50px;"></div>
+            </div>
+        </div>
+    </body>
+</html>

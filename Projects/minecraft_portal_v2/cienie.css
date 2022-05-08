@@ -1,0 +1,235 @@
+:root {
+    --shad-brig: 40%; /* shadows brightnes */
+}
+
+#br1, #br6, #br7, #br8, #br0,
+#p1r, #p2r, #p3r, #p4r, #p5r, #p6r, #p7r, #p8r, #p9r, #p10r, #p11r, #p12r, #p13r, #p14r {
+    filter: brightness(var(--shad-brig));
+}
+
+.cien_trawy, #cien_trawy_podloga, #cien_trawy_pod_2 {
+    position: absolute;
+    background-color: black;
+    filter: opacity(calc(100% - var(--shad-brig)));
+}
+
+.cien_trawy {
+    transform: skewY(45deg);
+    transform-origin: left center;
+}
+#cien_trawy_podloga {
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    transform: skewY(-45deg);
+    transform-origin: left center;
+}
+
+#cien_trawy_pod_2 {
+    transform: skewY(-45deg);
+    transform-origin: left center;
+}
+
+
+
+
+
+/* Dynamiczne cienie podloga */
+
+/*
+?.ct1-1
+? ^^^^^
+? cien top 1 (warstwa) - 1 (numer bloku obsydianu)
+*/
+
+.cb {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+
+    background-image: var(--grass_block_top);
+    background-size: 50px;
+    filter: brightness(var(--shad-brig));
+}
+
+.ct1-1 {
+    --pos-c: calc(var(--b1-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b1-pos-x) + var(--pos-c)) calc(225px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b1-pos-x) + var(--pos-c)) calc(175px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b1-pos-x) + var(--pos-c)) calc(125px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b1-pos-x) + var(--pos-c)) calc(125px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b1-pos-x) + var(--pos-c)) calc(175px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b1-pos-x) + var(--pos-c)) calc(225px + var(--b1-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-2 {
+    --pos-c: calc(var(--b2-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b2-pos-x) + var(--pos-c)) calc(225px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b2-pos-x) + var(--pos-c)) calc(175px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b2-pos-x) + var(--pos-c)) calc(125px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b2-pos-x) + var(--pos-c)) calc(125px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b2-pos-x) + var(--pos-c)) calc(175px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b2-pos-x) + var(--pos-c)) calc(225px + var(--b2-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-3 {
+    --pos-c: calc(var(--b3-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b3-pos-x) + var(--pos-c)) calc(225px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b3-pos-x) + var(--pos-c)) calc(175px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b3-pos-x) + var(--pos-c)) calc(125px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b3-pos-x) + var(--pos-c)) calc(125px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b3-pos-x) + var(--pos-c)) calc(175px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b3-pos-x) + var(--pos-c)) calc(225px + var(--b3-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-4 {
+    --pos-c: calc(var(--b4-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b4-pos-x) + var(--pos-c)) calc(225px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b4-pos-x) + var(--pos-c)) calc(175px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b4-pos-x) + var(--pos-c)) calc(125px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b4-pos-x) + var(--pos-c)) calc(125px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b4-pos-x) + var(--pos-c)) calc(175px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b4-pos-x) + var(--pos-c)) calc(225px + var(--b4-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-5 {
+    --pos-c: calc(var(--b5-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b5-pos-x) + var(--pos-c)) calc(225px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b5-pos-x) + var(--pos-c)) calc(175px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b5-pos-x) + var(--pos-c)) calc(125px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b5-pos-x) + var(--pos-c)) calc(125px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b5-pos-x) + var(--pos-c)) calc(175px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b5-pos-x) + var(--pos-c)) calc(225px + var(--b5-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-6 {
+    --pos-c: calc(var(--b6-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b6-pos-x) + var(--pos-c)) calc(225px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b6-pos-x) + var(--pos-c)) calc(175px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b6-pos-x) + var(--pos-c)) calc(125px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b6-pos-x) + var(--pos-c)) calc(125px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b6-pos-x) + var(--pos-c)) calc(175px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b6-pos-x) + var(--pos-c)) calc(225px + var(--b6-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-7 {
+    --pos-c: calc(var(--b7-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b7-pos-x) + var(--pos-c)) calc(225px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b7-pos-x) + var(--pos-c)) calc(175px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b7-pos-x) + var(--pos-c)) calc(125px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b7-pos-x) + var(--pos-c)) calc(125px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b7-pos-x) + var(--pos-c)) calc(175px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b7-pos-x) + var(--pos-c)) calc(225px + var(--b7-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-8 {
+    --pos-c: calc(var(--b8-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b8-pos-x) + var(--pos-c)) calc(225px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b8-pos-x) + var(--pos-c)) calc(175px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b8-pos-x) + var(--pos-c)) calc(125px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b8-pos-x) + var(--pos-c)) calc(125px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b8-pos-x) + var(--pos-c)) calc(175px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b8-pos-x) + var(--pos-c)) calc(225px + var(--b8-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-9 {
+    --pos-c: calc(var(--b9-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b9-pos-x) + var(--pos-c)) calc(225px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b9-pos-x) + var(--pos-c)) calc(175px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b9-pos-x) + var(--pos-c)) calc(125px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b9-pos-x) + var(--pos-c)) calc(125px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b9-pos-x) + var(--pos-c)) calc(175px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b9-pos-x) + var(--pos-c)) calc(225px + var(--b9-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-10 {
+    --pos-c: calc(var(--b10-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b10-pos-x) + var(--pos-c)) calc(225px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b10-pos-x) + var(--pos-c)) calc(175px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b10-pos-x) + var(--pos-c)) calc(125px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b10-pos-x) + var(--pos-c)) calc(125px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b10-pos-x) + var(--pos-c)) calc(175px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b10-pos-x) + var(--pos-c)) calc(225px + var(--b10-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-11 {
+    --pos-c: calc(var(--b11-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b11-pos-x) + var(--pos-c)) calc(225px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b11-pos-x) + var(--pos-c)) calc(175px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b11-pos-x) + var(--pos-c)) calc(125px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b11-pos-x) + var(--pos-c)) calc(125px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b11-pos-x) + var(--pos-c)) calc(175px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b11-pos-x) + var(--pos-c)) calc(225px + var(--b11-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-12 {
+    --pos-c: calc(var(--b12-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b12-pos-x) + var(--pos-c)) calc(225px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b12-pos-x) + var(--pos-c)) calc(175px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b12-pos-x) + var(--pos-c)) calc(125px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b12-pos-x) + var(--pos-c)) calc(125px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b12-pos-x) + var(--pos-c)) calc(175px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b12-pos-x) + var(--pos-c)) calc(225px + var(--b12-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-13 {
+    --pos-c: calc(var(--b13-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b13-pos-x) + var(--pos-c)) calc(225px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b13-pos-x) + var(--pos-c)) calc(175px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b13-pos-x) + var(--pos-c)) calc(125px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b13-pos-x) + var(--pos-c)) calc(125px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b13-pos-x) + var(--pos-c)) calc(175px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b13-pos-x) + var(--pos-c)) calc(225px + var(--b13-pos-z) - var(--pos-c))
+    );
+}
+
+.ct1-14 {
+    --pos-c: calc(var(--b14-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b14-pos-x) + var(--pos-c)) calc(225px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b14-pos-x) + var(--pos-c)) calc(175px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b14-pos-x) + var(--pos-c)) calc(125px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b14-pos-x) + var(--pos-c)) calc(125px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b14-pos-x) + var(--pos-c)) calc(175px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b14-pos-x) + var(--pos-c)) calc(225px + var(--b14-pos-z) - var(--pos-c))
+    );
+}
+
+/*  do kopiowania */
+.ct1-89 {
+    --pos-c: calc(var(--b89-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b89-pos-x) + var(--pos-c)) calc(225px + var(--b89-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b89-pos-x) + var(--pos-c)) calc(175px + var(--b89-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b89-pos-x) + var(--pos-c)) calc(125px + var(--b89-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b89-pos-x) + var(--pos-c)) calc(125px + var(--b89-pos-z) - var(--pos-c)), 
+        calc(275px + var(--b89-pos-x) + var(--pos-c)) calc(175px + var(--b89-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b89-pos-x) + var(--pos-c)) calc(225px + var(--b89-pos-z) - var(--pos-c))
+    );
+}

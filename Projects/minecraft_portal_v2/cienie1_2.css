@@ -1,0 +1,126 @@
+.cl1-1 {
+    --pos-c: calc(var(--b1-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b1-pos-x)) calc(325px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b1-pos-x)) calc(225px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b1-pos-x)) calc(225px + var(--b1-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b1-pos-x)) calc(325px + var(--b1-pos-z) - var(--pos-c))
+    );
+}
+.cl1-2 {
+    --pos-c: calc(var(--b2-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b2-pos-x)) calc(325px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b2-pos-x)) calc(225px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b2-pos-x)) calc(225px + var(--b2-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b2-pos-x)) calc(325px + var(--b2-pos-z) - var(--pos-c))
+    );
+}
+.cl1-3 {
+    --pos-c: calc(var(--b3-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b3-pos-x)) calc(325px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b3-pos-x)) calc(225px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b3-pos-x)) calc(225px + var(--b3-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b3-pos-x)) calc(325px + var(--b3-pos-z) - var(--pos-c))
+    );
+}
+.cl1-4 {
+    --pos-c: calc(var(--b4-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b4-pos-x)) calc(325px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b4-pos-x)) calc(225px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b4-pos-x)) calc(225px + var(--b4-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b4-pos-x)) calc(325px + var(--b4-pos-z) - var(--pos-c))
+    );
+}
+.cl1-5 {
+    --pos-c: calc(var(--b5-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b5-pos-x)) calc(325px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b5-pos-x)) calc(225px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b5-pos-x)) calc(225px + var(--b5-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b5-pos-x)) calc(325px + var(--b5-pos-z) - var(--pos-c))
+    );
+}
+.cl1-6 {
+    --pos-c: calc(var(--b6-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b6-pos-x)) calc(325px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b6-pos-x)) calc(225px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b6-pos-x)) calc(225px + var(--b6-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b6-pos-x)) calc(325px + var(--b6-pos-z) - var(--pos-c))
+    );
+}
+.cl1-7 {
+    --pos-c: calc(var(--b7-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b7-pos-x)) calc(325px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b7-pos-x)) calc(225px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b7-pos-x)) calc(225px + var(--b7-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b7-pos-x)) calc(325px + var(--b7-pos-z) - var(--pos-c))
+    );
+}
+.cl1-8 {
+    --pos-c: calc(var(--b8-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b8-pos-x)) calc(325px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b8-pos-x)) calc(225px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b8-pos-x)) calc(225px + var(--b8-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b8-pos-x)) calc(325px + var(--b8-pos-z) - var(--pos-c))
+    );
+}
+.cl1-9 {
+    --pos-c: calc(var(--b9-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b9-pos-x)) calc(325px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b9-pos-x)) calc(225px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b9-pos-x)) calc(225px + var(--b9-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b9-pos-x)) calc(325px + var(--b9-pos-z) - var(--pos-c))
+    );
+}
+.cl1-10 {
+    --pos-c: calc(var(--b10-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b10-pos-x)) calc(325px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b10-pos-x)) calc(225px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b10-pos-x)) calc(225px + var(--b10-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b10-pos-x)) calc(325px + var(--b10-pos-z) - var(--pos-c))
+    );
+}
+.cl1-11 {
+    --pos-c: calc(var(--b11-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b11-pos-x)) calc(325px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b11-pos-x)) calc(225px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b11-pos-x)) calc(225px + var(--b11-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b11-pos-x)) calc(325px + var(--b11-pos-z) - var(--pos-c))
+    );
+}
+.cl1-12 {
+    --pos-c: calc(var(--b12-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b12-pos-x)) calc(325px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b12-pos-x)) calc(225px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b12-pos-x)) calc(225px + var(--b12-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b12-pos-x)) calc(325px + var(--b12-pos-z) - var(--pos-c))
+    );
+}
+.cl1-13 {
+    --pos-c: calc(var(--b13-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b13-pos-x)) calc(325px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b13-pos-x)) calc(225px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b13-pos-x)) calc(225px + var(--b13-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b13-pos-x)) calc(325px + var(--b13-pos-z) - var(--pos-c))
+    );
+}
+.cl1-14 {
+    --pos-c: calc(var(--b14-pos-y) + 125px);
+    clip-path: polygon(
+        calc(175px + var(--b14-pos-x)) calc(325px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(175px + var(--b14-pos-x)) calc(225px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b14-pos-x)) calc(225px + var(--b14-pos-z) - var(--pos-c)), 
+        calc(225px + var(--b14-pos-x)) calc(325px + var(--b14-pos-z) - var(--pos-c))
+    );
+}

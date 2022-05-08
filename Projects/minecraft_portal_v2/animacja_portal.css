@@ -1,0 +1,339 @@
+@keyframes obst {
+    0% {
+        transform: 
+        rotateX(80deg)
+        rotateZ(45deg)
+        translate3d(var(--pos-x), var(--pos-z), calc(var(--pos-y) + 25px));
+        animation-timing-function: ease-in;
+    }
+    3% {
+        transform: 
+        rotateX(80deg)
+        rotateZ(45deg)
+        translate3d(var(--pos-x), var(--pos-z), calc(var(--pos-y)))
+        scale(0, 0);
+        animation-timing-function: ease-in;
+    }
+    20% {
+        transform: 
+        rotateX(80deg)
+        rotateZ(45deg)
+        translate3d(var(--pos-x), var(--pos-z), calc(var(--pos-y) + var(--ani-hei)))
+        scale(0, 0);
+    }
+    23% {
+        transform: 
+        rotateX(80deg)
+        rotateZ(45deg)
+        translate3d(var(--pos-x), var(--pos-z), calc(var(--pos-y) + var(--ani-hei) + 25px))
+        scale(1, 1);
+        animation-timing-function: ease-in;
+    }
+    30% {
+        transform: 
+        rotateX(80deg)
+        rotateZ(45deg)
+        translate3d(var(--pos-x), var(--pos-z), calc(var(--pos-y) + 25px));
+        animation-timing-function: ease-in;
+    }
+    100% {
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes obsl {
+    0% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-y) * -1), calc(var(--pos-z) + 25px));
+        animation-timing-function: ease-in;
+    }
+    3% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-y) * -1), calc(var(--pos-z)))
+        scale(0, 0);
+        animation-timing-function: ease-in;
+    }
+    20% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-y) * -1 - var(--ani-hei)), calc(var(--pos-z)))
+        scale(0, 0);
+    }
+    23% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-y) * -1 - var(--ani-hei)), calc(var(--pos-z) + 25px))
+        scale(1, 1);
+        animation-timing-function: ease-in;
+    }
+    30% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-y) * -1), calc(var(--pos-z) + 25px));
+        animation-timing-function: ease-in;
+    }
+    100% {
+        animation-timing-function: ease-in;
+    }
+}
+
+/* Secret :> Krulik2017 */
+
+@keyframes obsr {
+    0% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(45deg)
+        translate3d(calc(var(--pos-z) * -1), calc(var(--pos-y) * -1), calc(var(--pos-x) + 25px));
+        animation-timing-function: ease-in;
+    }
+    3% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(45deg)
+        translate3d(calc(var(--pos-z) * -1), calc(var(--pos-y) * -1), calc(var(--pos-x)))
+        scale(0, 0);
+        animation-timing-function: ease-in;
+    }
+    20% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(45deg)
+        translate3d(calc(var(--pos-z) * -1), calc(var(--pos-y) * -1 - var(--ani-hei)), calc(var(--pos-x)))
+        scale(0, 0);
+    }
+    23% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(45deg)
+        translate3d(calc(var(--pos-z) * -1), calc(var(--pos-y) * -1 - var(--ani-hei)), calc(var(--pos-x) + 25px))
+        scale(1, 1);
+        animation-timing-function: ease-in;
+    }
+    30% {
+        transform: 
+        rotateX(-10deg)
+        rotateY(45deg)
+        translate3d(calc(var(--pos-z) * -1), calc(var(--pos-y) * -1), calc(var(--pos-x) + 25px));
+        animation-timing-function: ease-in;
+    }
+    100% {
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes obsb {
+    0% {
+        transform: 
+        rotateX(-100deg)
+        rotateZ(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-z) * -1), calc(var(--pos-y) * -1 + 25px));
+        animation-timing-function: ease-in;
+    }
+    3% {
+        transform: 
+        rotateX(-100deg)
+        rotateZ(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-z) * -1), calc(var(--pos-y) * -1))
+        scale(0, 0);
+        animation-timing-function: ease-in;
+    }
+    20% {
+        transform: 
+        rotateX(-100deg)
+        rotateZ(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-z) * -1), calc(var(--pos-y) * -1 - var(--ani-hei)))
+        scale(0, 0);
+    }
+    23% {
+        transform: 
+        rotateX(-100deg)
+        rotateZ(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-z) * -1), calc(var(--pos-y) * -1 - var(--ani-hei) + 25px))
+        scale(1, 1);
+        animation-timing-function: ease-in;
+    }
+    30% {
+        transform: 
+        rotateX(-100deg)
+        rotateZ(-45deg)
+        translate3d(var(--pos-x), calc(var(--pos-z) * -1), calc(var(--pos-y) * -1 + 25px));
+        animation-timing-function: ease-in;
+    }
+    100% {
+        animation-timing-function: ease-in;
+    }
+}
+
+@keyframes portal_frame {
+    1% {
+        opacity: 0%;
+    }
+    59% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 80%;
+    }
+}
+
+:root { /* Wysokość z jakiej spada */
+    --ani-hei: 300px;
+}
+
+.pt {
+    animation-name: obst;
+}
+.pl {
+    animation-name: obsl;
+}
+.pr {
+    animation-name: obsr;
+}
+.pb {
+    animation-name: obsb;
+}
+.obs, #pf {
+    animation-iteration-count: infinite;
+}
+
+
+
+#pf {
+    animation-name: portal_frame;
+    animation-duration: 15s;
+}
+
+
+#p1t, #p1l, #p1r, #p1b {
+    --pos-x: var(--b1-pos-x);
+    --pos-y: var(--b1-pos-y);
+    --pos-z: var(--b1-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 0.25s;
+}
+
+#p2t, #p2l, #p2r, #p2b {
+    --pos-x: var(--b2-pos-x);
+    --pos-y: var(--b2-pos-y);
+    --pos-z: var(--b2-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 0.5s;
+}
+
+#p3t, #p3l, #p3r, #p3b {
+    --pos-x: var(--b3-pos-x);
+    --pos-y: var(--b3-pos-y);
+    --pos-z: var(--b3-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 0.75s;
+}
+
+#p4t, #p4l, #p4r, #p4b {
+    --pos-x: var(--b4-pos-x);
+    --pos-y: var(--b4-pos-y);
+    --pos-z: var(--b4-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 1s;
+}
+
+#p5t, #p5l, #p5r, #p5b {
+    --pos-x: var(--b5-pos-x);
+    --pos-y: var(--b5-pos-y);
+    --pos-z: var(--b5-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 1.25s;
+}
+
+#p6t, #p6l, #p6r, #p6b {
+    --pos-x: var(--b6-pos-x);
+    --pos-y: var(--b6-pos-y);
+    --pos-z: var(--b6-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 1.5s;
+}
+
+#p7t, #p7l, #p7r, #p7b {
+    --pos-x: var(--b7-pos-x);
+    --pos-y: var(--b7-pos-y);
+    --pos-z: var(--b7-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 1.75s;
+}
+
+#p8t, #p8l, #p8r, #p8b {
+    --pos-x: var(--b8-pos-x);
+    --pos-y: var(--b8-pos-y);
+    --pos-z: var(--b8-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 2s;
+}
+
+#p9t, #p9l, #p9r, #p9b {
+    --pos-x: var(--b9-pos-x);
+    --pos-y: var(--b9-pos-y);
+    --pos-z: var(--b9-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 2.25s;
+}
+
+#p10t, #p10l, #p10r, #p10b {
+    --pos-x: var(--b10-pos-x);
+    --pos-y: var(--b10-pos-y);
+    --pos-z: var(--b10-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 2.5s;
+}
+
+#p11t, #p11l, #p11r, #p11b {
+    --pos-x: var(--b11-pos-x);
+    --pos-y: var(--b11-pos-y);
+    --pos-z: var(--b11-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 2.75s;
+}
+
+#p12t, #p12l, #p12r, #p12b {
+    --pos-x: var(--b12-pos-x);
+    --pos-y: var(--b12-pos-y);
+    --pos-z: var(--b12-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 3s;
+}
+
+#p13t, #p13l, #p13r, #p13b {
+    --pos-x: var(--b13-pos-x);
+    --pos-y: var(--b13-pos-y);
+    --pos-z: var(--b13-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 3.25s;
+}
+
+#p14t, #p14l, #p14r, #p14b {
+    --pos-x: var(--b14-pos-x);
+    --pos-y: var(--b14-pos-y);
+    --pos-z: var(--b14-pos-z);
+
+    animation-duration: 15s;
+    animation-delay: 3.5s;
+}

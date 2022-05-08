@@ -1,0 +1,206 @@
+.camel {
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    z-index: 10;
+}
+
+#kam1 {
+    top: 0vh;
+    left: 0vw;
+}
+#kam1:hover ~ #scena {
+    perspective-origin: 30% 30% ;
+}
+
+#kam2 {
+    top: 0vh;
+    left: 20vw;
+}
+#kam2:hover ~ #scena {
+    perspective-origin: 40% 30%;
+}
+
+#kam3 {
+    top: 0vh;
+    left: 40vw;
+}
+#kam3:hover ~ #scena {
+    perspective-origin: 50% 30%;
+}
+
+#kam4 {
+    top: 0vh;
+    left: 60vw;
+}
+#kam4:hover ~ #scena {
+    perspective-origin: 60% 30%;
+}
+
+#kam5 {
+    top: 0vh;
+    left: 80vw;
+}
+#kam5:hover ~ #scena {
+    perspective-origin: 70% 30%;
+}
+
+#kam6 {
+    top: 20vh;
+    left: 0vw;
+}
+#kam6:hover ~ #scena {
+    perspective-origin: 30% 40%;
+}
+
+#kam7 {
+    top: 20vh;
+    left: 20vw;
+}
+#kam7:hover ~ #scena {
+    perspective-origin: 40% 40%;
+}
+
+#kam8 {
+    top: 20vh;
+    left: 40vw;
+}
+#kam8:hover ~ #scena {
+    perspective-origin: 50% 40%;
+}
+
+#kam9 {
+    top: 20vh;
+    left: 60vw;
+}
+#kam9:hover ~ #scena {
+    perspective-origin: 60% 40%;
+}
+
+#kam10 {
+    top: 20vh;
+    left: 80vw;
+}
+#kam10:hover ~ #scena {
+    perspective-origin: 70% 40%;
+}
+
+#kam11 {
+    top: 40vh;
+    left: 0vw;
+}
+#kam11:hover ~ #scena {
+    perspective-origin: 30% 50%;
+}
+
+#kam12 {
+    top: 40vh;
+    left: 20vw;
+}
+#kam12:hover ~ #scena {
+    perspective-origin: 40% 50%;
+}
+
+#kam13 {
+    top: 40vh;
+    left: 40vw;
+}
+#kam13:hover ~ #scena {
+    perspective-origin: 50% 50%;
+}
+
+#kam14 {
+    top: 40vh;
+    left: 60vw;
+}
+#kam14:hover ~ #scena {
+    perspective-origin: 60% 50%;
+}
+
+#kam15 {
+    top: 40vh;
+    left: 80vw;
+}
+#kam15:hover ~ #scena {
+    perspective-origin: 70% 50%;
+}
+
+#kam16 {
+    top: 60vh;
+    left: 0vw;
+}
+#kam16:hover ~ #scena {
+    perspective-origin: 30% 60%;
+}
+
+#kam17 {
+    top: 60vh;
+    left: 20vw;
+}
+#kam17:hover ~ #scena {
+    perspective-origin: 40% 60%;
+}
+
+#kam18 {
+    top: 60vh;
+    left: 40vw;
+}
+#kam18:hover ~ #scena {
+    perspective-origin: 50% 60%;
+}
+
+#kam19 {
+    top: 60vh;
+    left: 60vw;
+}
+#kam19:hover ~ #scena {
+    perspective-origin: 60% 60%;
+}
+
+#kam20 {
+    top: 60vh;
+    left: 80vw;
+}
+#kam20:hover ~ #scena {
+    perspective-origin: 70% 60%;
+}
+
+#kam21 {
+    top: 80vh;
+    left: 0vw;
+}
+#kam21:hover ~ #scena {
+    perspective-origin: 30% 70%;
+}
+
+#kam22 {
+    top: 80vh;
+    left: 20vw;
+}
+#kam22:hover ~ #scena {
+    perspective-origin: 40% 70%;
+}
+
+#kam23 {
+    top: 80vh;
+    left: 40vw;
+}
+#kam23:hover ~ #scena {
+    perspective-origin: 50% 70%;
+}
+
+#kam24 {
+    top: 80vh;
+    left: 60vw;
+}
+#kam24:hover ~ #scena {
+    perspective-origin: 60% 70%;
+}
+
+#kam25 {
+    top: 80vh;
+    left: 80vw;
+}
+#kam25:hover ~ #scena {
+    perspective-origin: 70% 70%;
+}
